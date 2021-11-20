@@ -511,7 +511,7 @@ import javax.security.sasl.AuthorizeCallback
 
 // # arrayOf()
 
-fun main(){
+//fun main(){
 
 //    var data = arrayOf("Kushagra", "Upadhyaya", 21, 'M')
 ////    println(data[1])
@@ -521,7 +521,7 @@ fun main(){
 //    }
 
 
-    var data1 = arrayOf<String>("Kushagra", "Upadhyaya")
+//    var data1 = arrayOf<String>("Kushagra", "Upadhyaya")
 
 //    for(x in 0..data1.size-1){
 //        println(data1[x])
@@ -555,8 +555,152 @@ fun main(){
 //
 
     /********** For each loop  */
+//
+//    data1.forEach { name-> println(name) }
+//
+//
+//}
 
-    data1.forEach { name-> println(name) }
+
+// # Array () constructor
+
+//fun main(){
+//    val roll = Array(5,{i-> i*2})
+//        for(rl in roll){
+//            println(rl)
+//        }
+//}
 
 
-}
+
+// # Built-in Methods
+//fun main(){
+//    val roll = intArrayOf(111,112,113,114)  // here i is small in int
+//        for(rl in roll){
+//            println(rl)
+//        }
+//
+//        val ch = charArrayOf('M', 'F')
+//        for(i in ch){
+//            println(i)
+//        }
+//}
+
+
+/******** User Input Array ****************/
+
+//fun main(){
+//    print("Enter Number of Student: ")
+//    val num = readLine()!!.toInt()
+//    println(" ")
+//    print("Enter student name: ")
+//    val students = Array(num) {readLine()!!}
+//
+//    for (student in students){
+//        println(student)
+//    }
+//
+//}
+
+
+/**************** List ***********************/
+
+// List is an ordered collection with access to elements by indices - integers numbers that reflect their position.
+// Elements can occur more than once in a list.
+
+//fun main(){
+
+//    val data = listOf("Kushagra", "Upadhyaya", 21, 'M', "Kushagra")
+//
+//    println(data)           // it gives data inside square brackets
+//
+//    for ( i in data.indices){
+//        println(data[i])
+//    }
+//
+//    println(data.get(2))
+//
+//    println(" size of data: ${ data.size }")
+//
+//    data.forEach{d -> println(d)}
+
+
+    /****** List is umMutable by default  so no update and no adding of extra elements" **/
+//    println(" /****** List is umMutable by default  so no update and no adding of extra elements\" **/")
+//    val names = listOf<String>("Kushagra", "Upadhyaya")
+//
+//    println(names)
+
+
+//    val data = mutableListOf("Kushagra", "Upadhyaya", 21, 'M')
+//
+//    for(i in data){
+//        println(i)
+//    }
+//
+//    println(" Size of data: ${data.size}")
+//
+//    // # to update it
+//    data[2] = 22
+//    println(data)
+//
+//    // to add a new data
+//
+//    data.add(4,"Btech")
+//
+//    println("data: $data and size of data: ${data.size}")
+//
+//
+//   val x =  data.removeAt(4)
+//    println("Updated List: $data and deleted Element is: $x")
+//
+//
+//}
+
+
+// # Use Input in list
+//fun main(){
+//
+//    val num = readLine()!!.toInt()
+//        val students = List<String>(num){readLine()!!}          // to take elements in list by user using list constructor
+//
+//        for ( i in students){
+//            println(i)
+//        }
+//}
+
+
+
+
+/*************** Set *******/
+
+// set is a collection o unique elements. It reflects the mathematical abstraction of set: a group of objects without repetition
+// Generally, the order of set elements has no significance. set is unordered
+
+
+//fun main(){
+//
+//    val data = setOf("Kushagra", "Upadhyaya", 21, 'M', "Kushagra")  //  it removes repeated elements automatically
+//
+//    println(data)
+//
+//    for ( i in data){
+//        println(i)
+//    }
+//    println(data.size)
+//
+//    val data1 = setOf<String>("Kushagar", "Upadhyaya")
+//    println(data1)
+//
+//    var data3 = mutableSetOf("Kushagra", "Upadhyaya", 22)
+//    println(data3)
+//
+//    // we can not update in set, but remove and add
+//
+//    data3.remove(22)
+//    println(data3)
+//
+//    data3.add("22")
+//    println(data3)
+//
+//}
