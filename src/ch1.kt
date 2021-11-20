@@ -704,3 +704,30 @@ import javax.security.sasl.AuthorizeCallback
 //    println(data3)
 //
 //}
+
+
+/************ MAP or Dictionary ****************/
+
+// Map (or dictionary ) is a set of key-value pairs. Keys are unique, and each of them maps to exactly one value.
+// The value can be duplicates. Maps are useful for storing logical connections between objects, for example,
+// an employee's id and their position
+
+fun main(){
+val data = mapOf(1 to "Kushagra", 2 to "Upadhyaya", "Key3" to 22, "Key4" to 'M')
+
+    println(data)
+
+    for( i in data.values){
+        println(i)
+    }
+
+    for( i in data.keys){
+        println(i)
+    }
+
+    println("Keys: ${data.keys}")
+    println("Values: ${data.values}")
+    println("Size: ${data.size}")
+
+
+}
