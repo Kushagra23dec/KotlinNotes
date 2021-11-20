@@ -733,38 +733,42 @@ import javax.security.sasl.AuthorizeCallback
 //}
 
 // # adding datatype in map
-fun main(){
+//fun main(){
+//
+//    val names = mapOf<String, String>("1" to "Kushagra", "2" to "Upadhyaya")
+//    println(names)
+//
+//    val name = mutableMapOf(1 to "Kushagra", 2 to "Upadhyaya" , 3 to 21)
+//    println(name)
+//    println("Name's size ${name.size}")
+//
+//
+//    val details = mutableMapOf<String, String>("1" to "Kushagra", "2" to "Upadhyaya", "3" to "Btech", "4" to "Hello")
+//    println("Mutable map : ${details}")
+//
+//    details["1"] = "KUSHAGRA"
+//    println("Updated : ${details}")
+//
+//    details.put("1","Kushagra")
+//    println("Updated using put : ${details}")
+//
+//  val x =   details.remove("1")
+//    println("Updated removed $x : ${details}")
+//
+//     details.keys.remove("3")
+//
+//    println("Updated removed by key : ${details}")
+//
+//    details.values.remove("Hello")
+//
+//    println("Updated removed  by element : ${details}")
+//
+//
+//
+//
+//
+//}
 
-    val names = mapOf<String, String>("1" to "Kushagra", "2" to "Upadhyaya")
-    println(names)
-
-    val name = mutableMapOf(1 to "Kushagra", 2 to "Upadhyaya" , 3 to 21)
-    println(name)
-    println("Name's size ${name.size}")
-
-
-    val details = mutableMapOf<String, String>("1" to "Kushagra", "2" to "Upadhyaya", "3" to "Btech", "4" to "Hello")
-    println("Mutable map : ${details}")
-
-    details["1"] = "KUSHAGRA"
-    println("Updated : ${details}")
-
-    details.put("1","Kushagra")
-    println("Updated using put : ${details}")
-
-  val x =   details.remove("1")
-    println("Updated removed $x : ${details}")
-
-     details.keys.remove("3")
-
-    println("Updated removed by key : ${details}")
-
-    details.values.remove("Hello")
-
-    println("Updated removed  by element : ${details}")
 
 
 
-
-
-}
