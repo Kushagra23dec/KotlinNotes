@@ -10,9 +10,9 @@
 
 open class Father6{
  // Properties
- var a:Int = 10
- var b:Int = 20
- var c:Int = 30
+ private var a:Int = 10
+ protected var b:Int = 20
+ internal var c:Int = 30
  var d:Int = 40
 
  // Member Function
@@ -40,7 +40,7 @@ class Son6:Father6(){
  fun show(){
   println("************************")
 
-  println("A:$a")
+//  println("A:$a")        // Can't Access a
   println("B:$b")
   println("C:$c")
   println("D:$d")
@@ -52,8 +52,8 @@ fun main(){
  val s = Son6()
  s.show()
  s.disp()
- s.a = 101
- s.b = 102
+// s.a = 101
+// s.b = 102  // since b is protected so cant access it
  s.c = 103
  s.d = 104
  s.show()
