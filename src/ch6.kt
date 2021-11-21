@@ -1,34 +1,35 @@
 /********** Constructor **************/
 // Primary & Secondary Constructor
 
-class Registration(email:String, password:String){
+class Registration1(_email:String, _password:String){
     //Properties
-    var hName:String = ""
-    var hAge:Int? = null
-    var hEmail:String = email
-    var hPassword:String
+    var name:String = ""
+    var age:Int? = null
+    var email:String
+    var password:String
     var gender:String = "Female"
     // Secondary Constructor
         constructor(name:String, age:Int, email:String, password: String):this(email,password)
     {
-            hName = name
-            hAge = age
+            this.name = name
+            this.age = age
 
         }
     //Initializer Block               it is used for primary constructor
         init{
-            hPassword = password
+            password = _password
+            email = _email
         }
     //Member Function
 
     fun disp(){
 
-        println("Name:$hName \nAge:$hAge \nEmail:$hEmail \nPassword:$hPassword \nGender:$gender")
+        println("Name:$name \nAge:$age \nEmail:$email \nPassword:$password \nGender:$gender")
     }
 }
 
 fun main(){
-    val r1 = Registration("Himawari", 9,"himawari@gmail.com","hiawwww")
+    val r1 = Registration1("Himawari", 9,"himawari@gmail.com","hiawwww")
 
     r1.disp()
 }
