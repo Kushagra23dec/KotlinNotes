@@ -25,7 +25,7 @@ open class Father6{
   println("D:$d")
  }
 
- fun hello(){
+ protected fun hello(){
   println("Hello Father")
  }
 
@@ -57,6 +57,13 @@ fun main(){
  s.c = 103
  s.d = 104
  s.show()
- s.hello()
+// s.hello()  // cant access from here because Hello is protected
+
+ val f = Father6()
+// f.a = 11  //cant assign as it is private
+// f.b = 22 // cant assign as it is protected
+// f.hello()  // cant access because it is protected
 
 }
+
+// class Father private constructor(a:Int){.......}
