@@ -1,9 +1,6 @@
 
 
-class calculator{
-
-    var a = 0
-    var b = 0
+class Calculator{
 
     // methods
 
@@ -32,7 +29,7 @@ class calculator{
 
 fun main(){
 
-    val c1 = calculator()
+    val c1 = Calculator()
 
     print("Enter Two Integers: ")
     val a:Int = readLine()!!.toInt()
