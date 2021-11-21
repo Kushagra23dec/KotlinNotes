@@ -6,14 +6,14 @@ class Human(name:String, age:Int){
 
     // properties
     var hName:String
-    var hAge:Int
+    var hAge:Int = age             // to add values from constructor to properties
     var gender:String = "Female"
 
     // Initializer Block
 
     init {
         hName = name
-        hAge = age
+//        hAge = age
     }
 
     // member function
