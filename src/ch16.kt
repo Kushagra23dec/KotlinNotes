@@ -1,6 +1,6 @@
 /******** Abstract class and Abstract Method *************/
 
-abstract class Father7{         // Abstract class are always open, but we cann't create it's object
+abstract class Father7{         // Abstract class are always open, but we can't create its object
     // Properties
     var car:String = "Alt 100"
 
@@ -21,8 +21,8 @@ class  Son7:Father7(){
         println("Father car: $car")
     }
 
-    override
-    fun hello(){
+    //  Father class's abstract function's definition
+    override fun hello(){
         println("Hello for Hello function.")
     }
 
