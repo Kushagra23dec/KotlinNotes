@@ -5,11 +5,13 @@ import java.lang.Exception
 fun main(){
 
     val result = try{
-        val a = 10/2
+        val a = 10/0
         a
     }
     catch (e: Exception){
         e.message
+    } finally {                                     // it executes before try catch
+        println("Always Executes")
     }
 
     println(result)
